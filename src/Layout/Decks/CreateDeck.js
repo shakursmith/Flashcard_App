@@ -26,7 +26,7 @@ function CreateDeck({updateDecks}) {
                 </ol>
             </nav>
             <form onSubmit={formSubmit}>
-                <div class="form-group">
+                <div className="form-group">
                     <label>Name</label>
                     <input 
                     type="text" 
@@ -34,24 +34,24 @@ function CreateDeck({updateDecks}) {
                     value={newDeck.name}
                     onChange={formChange}
                     id="name" 
-                    class="form-control" 
+                    className="form-control" 
                     placeholder="Deck Name" 
                     />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label>Description</label>
                     <textarea
                     name="description" 
                     value={newDeck.description}
                     onChange={formChange}
-                    class="form-control" 
+                    className="form-control" 
                     id="description" 
                     placeholder="Brief description of the deck."
                     rows={4}
                     />
                 </div>
-                <Link to="/" name="cancel" class="btn btn-secondary mr-3">Cancel</Link>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <Link to="/" name="cancel" className="btn btn-secondary mr-3">Cancel</Link>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
     )
